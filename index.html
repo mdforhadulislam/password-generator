@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="password generator" />
+    <meta name="Author" content="Forhadul Islam" />
+    <title>Generator Password </title>
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- boxicon link  -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="password">
+            <div class="password__header">
+                <h1 class="password__header__title">Password Generator</h1>
+                <div class="password__header__output">
+                    <input type="text" class="password__header__output__password" id="password"></input>
+                    <div class="password__header__output__copy" id="copy">Copy</div>
+                </div>
+            </div>
+            <div class="password__body">
+                <div class="password__body__length">
+                    <label for="password__length" class="password__body__length__title">Password Length</label>
+                    <input type="number" id="password__length" min="6" max="30" />
+                </div>
+                <div class="password__body__uppercase">
+                    <label for="uppercase" class="password__body__uppercase__title">Include Uppercase</label>
+                    <input type="checkbox" id="uppercase">
+                </div>
+                <div class="password__body__lowercase">
+                    <label for="lowercase" class="password__body__lowercase__title">Include Lowercase</label>
+                    <input type="checkbox" id="lowercase">
+                </div>
+                <div class="password__body__number">
+                    <label for="number" class="password__body__number__title">Include Number</label>
+                    <input type="checkbox" id="number">
+                </div>
+                <div class="password__body__symbols">
+                    <label for="symbols" class="password__body__symbols__title">Include Symbols</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+                <input id="submit" type="submit" value="GENERATOR  PASSWORD">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

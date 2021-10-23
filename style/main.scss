@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-image: linear-gradient( to left top, #e00b84, #d036ad, #b354d1, #836ded, #2382ff);
+}
+
+@mixin all__checked__box__style($padding) {
+    width: 100%;
+    height: auto;
+    padding: $padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background: #0f6f90;
+    border-radius: 20px;
+    color: white;
+    .password {
+        &__header {
+            width: auto;
+            height: auto;
+            &__title {
+                font-size: 30px;
+                font-weight: 700;
+                padding: 0px 0px 15px 0px;
+            }
+            &__output {
+                width: 100%;
+                height: auto;
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background: white;
+                padding: 10px 5px;
+                border: 1px solid #989898;
+                border-radius: 5px;
+                color: black;
+                &__password {
+                    width: 100%;
+                    height: auto;
+                    font-size: 21px;
+                    font-weight: 700;
+                    border: none;
+                    outline: none;
+                }
+                &__copy {
+                    width: 55px;
+                    padding: 7px;
+                    background: black;
+                    color: white;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+        &__body {
+            padding: 15px 0px;
+            &__length {
+                @include all__checked__box__style(0px 0px 10px 0px);
+                input {
+                    width: 80px;
+                    padding: 3px 10px;
+                    font-size: 20px;
+                    outline: none;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+            &__uppercase {
+                @include all__checked__box__style(10px 0px);
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+            &__lowercase {
+                @include all__checked__box__style(10px 0px);
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+            &__number {
+                @include all__checked__box__style(10px 0px);
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+            &__symbols {
+                @include all__checked__box__style(10px 0px);
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+            #submit {
+                width: 100%;
+                height: auto;
+                padding: 5px 20px;
+                font-size: 17px;
+                font-weight: 700;
+                margin: 15px 0px 0px 0px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover {
+                    background: #e1edf2;
+                }
+            }
+        }
+    }
+}

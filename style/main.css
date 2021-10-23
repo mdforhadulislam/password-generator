@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#e00b84), color-stop(#d036ad), color-stop(#b354d1), color-stop(#836ded), to(#2382ff));
+  background-image: linear-gradient(to left top, #e00b84, #d036ad, #b354d1, #836ded, #2382ff);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  background: #0f6f90;
+  border-radius: 20px;
+  color: white;
+}
+
+.container .password__header {
+  width: auto;
+  height: auto;
+}
+
+.container .password__header__title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0px 0px 15px 0px;
+}
+
+.container .password__header__output {
+  width: 100%;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  padding: 10px 5px;
+  border: 1px solid #989898;
+  border-radius: 5px;
+  color: black;
+}
+
+.container .password__header__output__password {
+  width: 100%;
+  height: auto;
+  font-size: 21px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.container .password__header__output__copy {
+  width: 55px;
+  padding: 7px;
+  background: black;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .password__body {
+  padding: 15px 0px;
+}
+
+.container .password__body__length {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid black;
+}
+
+.container .password__body__length input {
+  width: 80px;
+  padding: 3px 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.container .password__body__uppercase {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid black;
+}
+
+.container .password__body__uppercase input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.container .password__body__lowercase {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid black;
+}
+
+.container .password__body__lowercase input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.container .password__body__number {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid black;
+}
+
+.container .password__body__number input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.container .password__body__symbols {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid black;
+}
+
+.container .password__body__symbols input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.container .password__body #submit {
+  width: 100%;
+  height: auto;
+  padding: 5px 20px;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 15px 0px 0px 0px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .password__body #submit:hover {
+  background: #e1edf2;
+}
+/*# sourceMappingURL=main.css.map */
